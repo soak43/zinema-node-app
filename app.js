@@ -8,10 +8,9 @@ import BillingController from './controllers/billing-controller.js';
 import MovieController from './controllers/movie-controller.js';
 
 
-const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/zinema' //'mongodb+srv://Cluster57626:anjali@cluster0.jyy3myf.mongodb.net/zinema'
-// const CONNECTION_STRING = 'mongodb+srv://Cluster57626:anjali@cluster0.jyy3myf.mongodb.net/zinema'
+const CONNECTION_STRING = 'mongodb+srv://sayalioak1110:2KcBG9eaaCmRs76I@cluster0.uc5bfg5.mongodb.net/Zinema?retryWrites=true&w=majority'//'mongodb://127.0.0.1:27017/zinema' 
 mongoose.connect(CONNECTION_STRING);
-
+// app.use(express.urlencoded({ extended: true }));
 const app = express()
 app.use(
   session({
